@@ -1,12 +1,12 @@
-module Game.TTT.Logic
+module Game.HSTTT.Logic
   ( applyMove
   , mkNewGame
   , freeCells
   , result
   ) where
 
-import Game.TTT.Types
-import Game.TTT.Util
+import Game.HSTTT.Types
+import Game.HSTTT.Util
 import Data.List
 import Data.Maybe
 

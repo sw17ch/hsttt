@@ -1,6 +1,6 @@
 module Main where
 
-import Game.TTT
+import Game.HSTTT
 
 main :: IO ()
 main = runGame mkNewGame >>= print

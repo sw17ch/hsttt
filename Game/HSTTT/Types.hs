@@ -1,4 +1,4 @@
-module Game.TTT.Types
+module Game.HSTTT.Types
   ( Game(..)
   , Move(..)
   , Player(..)

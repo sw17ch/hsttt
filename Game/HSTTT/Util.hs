@@ -1,4 +1,4 @@
-module Game.TTT.Util where
+module Game.HSTTT.Util where
 
 -- Some list utility functions.
 allEq :: (Eq a) => [a] -> Bool
