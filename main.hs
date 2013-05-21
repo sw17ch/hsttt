@@ -1,7 +1,6 @@
 module Main where
 
 import Game.HSTTT
-import Game.HSTTT.AI
 
 main :: IO ()
 main = runGame mkNewGame >>= print
