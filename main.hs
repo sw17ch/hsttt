@@ -10,6 +10,8 @@ getPlayerMove _ = do
   [x,y] <- getLine
   return $ Move MarkX (read [x]) (read [y])
 
+-- |The AI is currently very simple. It finds the first free cell and uses it
+-- as its move.
 getAIMove :: Game -> IO Move
 getAIMove g = do
   putStrLn $ "AI move: " ++ show x ++ show y
