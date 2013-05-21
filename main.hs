@@ -1,6 +1,7 @@
 module Main where
 
 import Game.HSTTT
+import Game.HSTTT.AI
 
 main :: IO ()
 main = runGame mkNewGame >>= print
@@ -10,14 +11,12 @@ getPlayerMove _ = do
   [x,y] <- getLine
   return $ Move MarkX (read [x]) (read [y])
 
--- |The AI is currently very simple. It finds the first free cell and uses it
--- as its move.
 getAIMove :: Game -> IO Move
 getAIMove g = do
   putStrLn $ "AI move: " ++ show x ++ show y
   return $ Move MarkO x y
   where
-    (x, y) = head $ freeCells g
+    (x, y) = aiMove g
 
 runGame :: Game -> IO Result
 runGame g = do
